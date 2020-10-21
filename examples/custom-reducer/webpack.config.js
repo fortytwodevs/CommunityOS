@@ -46,7 +46,15 @@ const CONFIG = {
         loader: 'babel-loader',
         include: join(__dirname, 'src'),
         exclude: [/node_modules/]
-      }
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
     ]
   },
 

@@ -22,6 +22,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {KEPLER_GL_NAME, KEPLER_GL_VERSION, KEPLER_GL_WEBSITE} from 'constants/default-settings';
+import Logo from './logo.png';
 
 const LogoTitle = styled.div`
   display: inline-block;
@@ -61,14 +62,18 @@ const LogoSvg = () => (
   </svg>
 );
 
+const LogoPng = () => (
+  <img src={Logo} alt="Logo" />
+);
+
 const KeplerGlLogo = ({appName, appWebsite = KEPLER_GL_WEBSITE, version}) => (
   <LogoWrapper className="side-panel-logo">
-    <LogoSvgWrapper>
+    {/* <LogoSvgWrapper>
       <LogoSvg />
-    </LogoSvgWrapper>
+    </LogoSvgWrapper> */}
     <LogoTitle className="logo__title">
       <LogoName className="logo__name">
-        <a className="logo__link" target="_blank" rel="noopener noreferrer" href={appWebsite}>
+        <a className="logo__link" target="_blank" rel="noopener noreferrer">
           {appName}
         </a>
       </LogoName>

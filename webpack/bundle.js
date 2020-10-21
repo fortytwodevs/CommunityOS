@@ -50,7 +50,15 @@ const LIBRARY_BUNDLE_CONFIG = env => ({
         test: /\.js$/,
         loader: 'babel-loader',
         include: [SRC_DIR]
-      }
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
     ]
   },
 

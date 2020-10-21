@@ -129,8 +129,8 @@ export function getStyleImageIcon({
   mapboxApiAccessToken,
   mapboxApiUrl = DEFAULT_MAPBOX_API_URL,
   mapState = {
-    longitude: -122.3391,
-    latitude: 37.7922,
+    longitude: -1.2577,
+    latitude: 51.7520,
     zoom: 9
   },
   mapW = 400,

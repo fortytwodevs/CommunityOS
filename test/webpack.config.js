@@ -46,6 +46,14 @@ const COMMON_CONFIG = {
         enforce: 'pre'
       },
       {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
+      {
         test: /\.js$/,
         loader: 'babel-loader',
         include: [SRC_DIR, TEST_DIR],

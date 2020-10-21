@@ -124,7 +124,15 @@ function makeLocalDevConfig(env, EXAMPLE_DIR = LIB_DIR, externals = {}) {
           use: ['source-map-loader'],
           enforce: 'pre',
           exclude: [/node_modules\/react-palm/, /node_modules\/react-data-grid/]
-        }
+        },
+        {
+          test: /\.(png|jpe?g|gif)$/i,
+          use: [
+            {
+              loader: 'file-loader',
+            },
+          ],
+        },
       ]
     },
     // Optional: Enables reading mapbox token from environment variable

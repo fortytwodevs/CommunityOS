@@ -36,6 +36,7 @@ export const MAP_CONFIG_URL = `${DATA_URL}samples.json?nocache=${new Date().getT
  * @type {string}
  */
 export const KEPLER_GL_WEBSITE = 'http://kepler.gl/';
+export const KEPLER_GL_NAME = "CommunityOS";
 
 export const QUERY_TYPES = keyMirror({
   file: null,

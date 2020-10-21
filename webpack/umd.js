@@ -105,6 +105,14 @@ const LIBRARY_BUNDLE_CONFIG = env => ({
             ]
           ]
         }
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader'
+          }
+        ]
       }
     ]
   },
